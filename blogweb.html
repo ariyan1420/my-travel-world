@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My World</title>
+  <style>
+    * {
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    .navbar {
+      background-color: crimson;
+      padding: 15px;
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo a {
+      font-size: 35px;
+      font-weight: 600;
+      color: white;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    li a {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      margin-right: 25px;
+    }
+
+    button {
+      background-color: black;
+      margin-left: 10px;
+      border-radius: 10px;
+      width: 90px;
+      border: none;
+      padding: 8px 12px;
+    }
+
+    button a {
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .mybanner {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 36px;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 28px;
+      color: darkblue;
+    }
+
+    .content-section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 32%;
+      min-width: 250px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+      flex-grow: 1;
+    }
+
+    .card-content h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card-content p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .card-content a {
+      align-self: start;
+      text-decoration: none;
+      color: white;
+      background-color: crimson;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .card-content a:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navdiv">
+      <div class="logo"><a href="#">Arif's World</a></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><button><a href="login2.html">SignIn</a></button></li>
+        <li><button><a href="#">SignUp</a></button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Welcome to my <span style="color: darkmagenta;">Travel World</span></h1>
+
+  <div class="banner">
+    <img class="mybanner" src="images/EXPLORE (1920 x 1080 px) (1).png" alt="Travel Banner">
+  </div>
+
+  <div class="content-section">
+    <h2>MY FAVORITE PLACES</h2>
+  </div>
+
+  <div class="cards">
+    <!-- Nepal Card -->
+    <div class="card">
+      <img src="https://i.ytimg.com/vi/_-ERZBVYd90/maxresdefault.jpg" alt="Nepal Mountains">
+      <div class="card-content">
+        <h2>Nepal</h2>
+        <p>Discover the majestic Himalayas and vibrant culture of Nepal.</p>
+        <a href="https://en.wikipedia.org/wiki/Nepal" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <!-- Maldives Card -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="Maldives Beach">
+      <div class="card-content">
+        <h2>Maldives</h2>
+        <p>Relax on white sandy beaches and turquoise waters of Maldives.</p>
+        <a href="https://en.wikipedia.org/wiki/Maldives" target="_blank">Read More</a>
+      </div>
+    </div>
+
+    <!-- Japan Card -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?auto=format&fit=crop&w=800&q=60" alt="Japan Mount Fuji">
+      <div class="card-content">
+        <h2>Japan</h2>
+        <p>Experience the harmony of nature and culture in Japan.</p>
+        <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Read More</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
